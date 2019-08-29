@@ -1,3 +1,4 @@
+// 프로젝트 메타데이터 (Title, Description, 플러그인 등등)와 같은 설정 파일
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,

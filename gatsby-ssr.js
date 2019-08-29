@@ -5,3 +5,4 @@
  */
 
 // You can delete this file if you're not using it
+// 서버사이드 렌더링을 API를 적용할 수 있는 파일
