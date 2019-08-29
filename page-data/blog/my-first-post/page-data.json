@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-post-tsx","path":"/blog/my-first-post","webpackCompilationHash":"4f405c9cef118acc90c6","result":{"data":{"markdownRemark":{"html":"<h2>My first blog posting</h2>","frontmatter":{"date":"May 04, 2019","path":"/blog/my-first-post","title":"My First blog post"}}},"pageContext":{"isCreatedByStatefulCreatePages":false}}}
