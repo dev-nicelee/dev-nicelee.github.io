@@ -8,17 +8,19 @@ export default function IndexPage({
   data,
 }) {
   const { allMarkdownRemark } = data // data.markdownRemark holds our post data
-  console.log(allMarkdownRemark)
 
   return (
     <Layout>
       <SEO title="Home" />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby blog with Markdown pages.</p>
-      {/* <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link> */}
       {allMarkdownRemark.edges
         .filter(edge => !!edge.node.frontmatter.date)
-        .map(edge => <div><Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link></div>)
+        .map(edge =>
+          <div key={edge.node.id}>
+            <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+          </div>
+        )
       }
     </Layout>
   )
