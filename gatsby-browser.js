@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 // Gatsby에서 브라우저 조작을 위한 추가적인 설정이 가능함.
-require("prismjs/themes/prism-tomorrow.css")
+require("prismjs/themes/prism-tomorrow.css");
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");

@@ -30,13 +30,13 @@ const Layout = ({ children }) => {
       <Global
         styles={GlobalStyles}
       />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <div className='page-wrapper'>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <footer>
+          © dev-nicelee
+        </footer>
+      </div>
     </>
   )
 }
