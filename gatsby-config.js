@@ -15,6 +15,14 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: '800',
+              height: '400'
+            }
+          },
+          `gatsby-remark-responsive-iframe`,
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               offsetY: `100`,
@@ -53,13 +61,6 @@ module.exports = {
                 host: "localhost",
                 global: false,
               },
-            }
-          },
-          {
-            resolve: "gatsby-remark-embed-youtube",
-            options: {
-              width: '100%',
-              height: '400'
             }
           },
         ],
