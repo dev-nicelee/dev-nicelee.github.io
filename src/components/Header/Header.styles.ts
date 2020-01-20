@@ -1,15 +1,21 @@
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
+import { mq } from '../layout.styles'
 
 export const headerStyle = css`
-  height: 9vw;
+  ${mq({
+    fontSize: ['17vw', '17vw', '3vw', '9vw']
+  })}
   padding: 2vw;
   display: flex;
   align-items: center;
 `
 
 export const Title = styled.div`
-  font-size: 3vw;
+  ${mq({
+    fontSize: ['7vw', '7vw', '3vw', '3vw']
+  })}
+
   margin: 0;
   flex: 1;
   font-family: 'Merriweather Sans',sans-serif;
@@ -25,7 +31,9 @@ export const Menu = styled.ul`
   align-items: center;
   list-style: none;
   justify-content: flex-end;
-  font-size: 2vw;
+  ${mq({
+    fontSize: ['4vw', '4vw', '2vw', '2vw']
+  })}
   font-family: 'Merriweather Sans',sans-serif;
 `
 

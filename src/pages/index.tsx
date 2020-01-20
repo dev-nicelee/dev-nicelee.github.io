@@ -4,10 +4,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { css } from '@emotion/core'
+import { mq } from "../components/layout.styles"
 
 export const blogTitleLinkStyle = css`
   color: #000;
-  font-size: 3vw;
+  ${mq({
+    fontSize: ['6vw', '6vw', '4vh', '4vh']
+  })}
   font-weight: 600;
 `
 
