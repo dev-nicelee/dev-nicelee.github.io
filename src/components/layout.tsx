@@ -32,7 +32,9 @@ const Layout = ({ children }) => {
       />
       <div className='page-wrapper'>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <main style={{ 
+          padding: '6vw'
+        }}>{children}</main>
         <footer>
           © dev-nicelee
         </footer>

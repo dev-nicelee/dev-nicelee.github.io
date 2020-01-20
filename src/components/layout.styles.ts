@@ -64,7 +64,7 @@ main {
 
 .blog-post {
   ${mq({
-    padding: ['50px 25px', '50px 100px', '50px 100px', '50px 25%;']
+    padding: ['20px 10px', '10px 20px', '50px 100px', '50px 10%;']
   })}
 }
 

@@ -3,6 +3,13 @@ import SEO from "../components/seo"
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import { css } from '@emotion/core'
+
+export const blogTitleLinkStyle = css`
+  color: #000;
+  font-size: 3vw;
+  font-weight: 600;
+`
 
 export default function IndexPage({
   data,
@@ -12,13 +19,17 @@ export default function IndexPage({
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby blog with Markdown pages.</p>
       {allMarkdownRemark.edges
         .filter(edge => !!edge.node.frontmatter.date)
         .map(edge =>
           <div key={edge.node.id}>
-            <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+            <Link 
+              to={edge.node.frontmatter.path}
+              css={blogTitleLinkStyle}
+            >
+              {edge.node.frontmatter.title}
+            </Link>
+            <p>{edge.node.frontmatter.date}</p>
           </div>
         )
       }
