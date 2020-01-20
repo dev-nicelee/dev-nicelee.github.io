@@ -16,7 +16,6 @@ const Header = ({ siteTitle }) => (
     <nav style={{ flex: 4 }}>
       <Menu>
         <MenuItem><a href="#">About</a></MenuItem>
-        <MenuItem><a href="#">Develoment</a></MenuItem>
         <MenuItem><a href="#">Contact</a></MenuItem>
       </Menu>
     </nav>
