@@ -10,9 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global } from "@emotion/core"
 
-import { GlobalStyles } from './layout.styles'
+import { globalStyles } from './layout.styles'
 
-import Header from "./header"
+import Header from "./Header/header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global
-        styles={GlobalStyles}
+        styles={globalStyles}
       />
       <div className='page-wrapper'>
         <Header siteTitle={data.site.siteMetadata.title} />

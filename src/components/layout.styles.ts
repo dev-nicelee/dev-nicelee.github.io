@@ -7,7 +7,7 @@ const mq = facepaint(
   breakpoints.map(bp => `@media (min-width: ${bp}px)`)
 )
 
-export const GlobalStyles = css`
+export const globalStyles = css`
 
 html {
   box-sizing: border-box;
