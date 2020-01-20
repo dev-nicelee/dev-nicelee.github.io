@@ -1,6 +1,5 @@
 ---
-path: "/blog/my-second-post"
-date: "2019-05-04"
-title: "My Second blog post"
+path: "/retrospect"
+date: "2020-01-10"
+title: "Retrospect"
 ---
-Has anyone hear about GatsbyJS yet?

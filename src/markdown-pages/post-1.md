@@ -1,7 +1,7 @@
 ---
-path: "/blog/my-first-post"
-date: "2019-05-04"
-title: "sample"
+path: "/sample-post"
+date: "2020-01-04"
+title: "Sample Post"
 ---
 
 ```js
